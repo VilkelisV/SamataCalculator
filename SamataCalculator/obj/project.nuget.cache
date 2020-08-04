@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "uBoxMkPvrkkWjTf2e2un4bd9apNhmWGaoAWl1H8y6cTpLVjXQy7amz1l4nfox2YpTVR3Ib/mbJ/nCXQGRoANAg==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Vartotojas\\Documents\\Programming\\WEB\\ASP.NET\\Samata\\SamataCalculator\\SamataCalculator\\SamataCalculator.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Vartotojas\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

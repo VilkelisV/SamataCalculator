@@ -1,0 +1,88 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="container">
+    <form id="jobForm">
+
+        <div class="form-selections">
+            <label for="category">Pasirinkite kategorija</label>
+            <select class="form-control" name="category" id="category">
+                <option disabled selected> -- Pasirinkite kategorija -- </option>
+                <option value="categoryAtlikti">Atlikti darbai</option>
+                <option value="categoryPapildomi">Papildomi darbai</option>
+                <option value="categoryNeplanuotos">Neplanuotos islaidos</option>
+            </select>
+        </div>
+
+
+        <div class="form-selection categorySelection" id="categoryAtlikti">
+            <div id="jobTypeSelector">
+                <label for="category">Kokie darbai buvo atlikti?</label>
+                <select class="form-control typeSelection" name="jobType">
+                    <option class="selectionPlaceholder" selected> -- Pasirinkite atlikta darba -- </option>
+                    <option value="jobTypeMagistrales">Magistraliu darbai</option>
+                    <option value="jobTypeParuosimas">Paruosimo darbai</option>
+                    <option value="jobTypePrietaisai">Prietaisu montavimas</option>
+                </select>
+            </div>
+
+
+
+            <div class="jobType" id="jobTypeMagistrales">
+                <div class="row">
+                    <div class="col-6">
+                        <div class="form-group">
+                            <label>Metrai</label>
+                            <input type="number" name="meters" placeholder="0" class="form-control">
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="form-group">
+                            <label>Metro kaina</label>
+                            <input type="number" name="price" placeholder="0" class="form-control">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-selection jobType" id="jobTypeParuosimas">
+                <label for="category">Kokie paruosimo darbai buvo atlikti?</label>
+                <select class="form-control" name="jobName">
+                    <option value="" class="selectionPlaceholder" selected>
+                        -- Pasirinkite atlikta paruosimo darba --
+                    </option>
+                    <option value="kasimas">Kasimas</option>
+                    <option value="sienu_grezimas">Sienu grezimas</option>
+                </select>
+                <div class="form-group">
+                    <label>Kaina</label>
+                    <input type="number" name="price" placeholder="0" class="form-control">
+                </div>
+            </div>
+
+            <div class="form-selection jobType" id="jobTypePrietaisai">
+                <label for="category">Kokie prietaisai buvo sumontuoti?</label>
+                <select class="form-control" name="jobName">
+                    <option value="" class="selectionPlaceholder" selected>
+                        -- Pasirinkite sumontuota prietaisa --
+                    </option>
+                    <option value="tualetas">Tualetas</option>
+                    <option value="vonia">Vonia</option>
+                </select>
+                <div class="form-group">
+                    <label>Kiekis</label>
+                    <input type="number" name="quantity" placeholder="0" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label>Kaina</label>
+                    <input type="number" name="price" placeholder="0" class="form-control">
+                </div>
+            </div>
+        </div>
+
+        <br />
+        <button id="formBtn" type="submit" class="btn btn-primary">Submit</button>
+    </form>
+    <p id="resultText"></p>
+</div>
