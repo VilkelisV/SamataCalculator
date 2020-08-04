@@ -15,7 +15,7 @@ $(document).ready(function () {
         $(rawData).each(function (i, field) {
             if (field.value != "") validData.push(field)
         })
-
+        console.log("nice")
     }
 
     function generateObjectFromValidData() {
